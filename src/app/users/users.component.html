@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Mobile No</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of userArr" >
+        <td>{{item.user_email}}</td>
+        <td>{{item.user_name}}</td>
+        <td>{{item.user_mobile_no}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
