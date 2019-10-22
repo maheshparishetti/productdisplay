@@ -52,7 +52,8 @@ export class UserdataService {
   currentUser;
   redirectURL: string;
   login(user_email: string, user_password: string) {
-    if (user_email == "admin" && user_password == "1234") {
+    if (user_email == 'a' && user_password == 'a') {
+      alert('wtf');
       this.currentUser = {
         user_email: user_email,
         password: user_password,
@@ -60,6 +61,7 @@ export class UserdataService {
       };
       return;
     }
+    alert('ll');
     this.currentUser = {
       user_email: user_email,
       password: user_password,
